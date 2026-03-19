@@ -1,1 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldnet Provedor de Internet</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #004d99;
+            --accent-color: #ff6600;
+            --light-bg: #f8f9fa;
+        }
+        
+        .navbar {
+            background-color: var(--primary-color) !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 100px 0;
+            margin-top: 56px;
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .card-plan {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .card-plan:hover {
+            transform: translateY(-10px);
+        }
+        
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 500;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            color: white;
+        }
+        
+        .company-info {
+            background-color: var(--light-bg);
+            padding: 40px 0;
+            border-radius: 10px;
+        }
+        
+        .info-item {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .info-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        .social-icon {
+            font-size: 1.5rem;
+            color: white;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .social-icon:hover {
+            color: var(--primary-color);
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .coverage-area {
+            background-color: var(--light-bg);
+            padding: 60px 0;
+        }
+    </style>
+</head>
+<body>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-wifi"></i> Worldnet
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#planos">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Worldnet Provedor de Internet</h1>
+                    <p class="lead mb-4">Internet de alta velocidade para sua casa e empresa em São Vicente Ferrer e região. Conecte-se com a melhor experiência digital!</p>
+                    <a href="https://wa.me/5581998200727" class="btn btn-whatsapp" target="_blank">
+                        <i class="bi bi-whatsapp"></i> Fale Conosco no WhatsApp
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://img.freepik.com/vetores-gratis/vector-de-conceito-de-wifi_107173-17678.jpg" alt="Internet" class="img-fluid rounded" style="max-width: 80%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-plan card p-4 text-center">
+                        <i class="bi bi-lightning-charge feature-icon"></i>
+                        <h4>Alta Velocidade</h4>
+                        <p>Conexão estável e rápida para todas as suas necessidades online</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-plan card p-4 text-center">
+                        <i class="bi bi-shield-check feature-icon"></i>
+                        <h4>Suporte Técnico</h4>
+                        <p>Atendimento rápido e especializado quando você precisar</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-plan card p-4 text-center">
+                        <i class="bi bi-wifi feature-icon"></i>
+                        <h4>Cobertura Total</h4>
+                        <p>Cobertura em todo distrito de Siriji e região</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos -->
+    <section id="planos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Nossos Planos</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-plan card p-4">
+                        <div class="text-center">
+                            <i class="bi bi-wifi feature-icon"></i>
+                            <h3>Plano Básico</h3>
+                            <div class="plan-price">R$ 89,90</div>
+                            <p class="text-muted">por mês</p>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 100 Mega</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Wi-Fi incluso</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Suporte 24/7</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Instalação grátis</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Contratar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-plan card p-4 border-primary">
+                        <div class="text-center">
+                            <span class="badge bg-primary mb-3">Mais Popular</span>
+                            <i class="bi bi-wifi feature-icon"></i>
+                            <h3>Plano Família</h3>
+                            <div class="plan-price">R$ 129,90</div>
+                            <p class="text-muted">por mês</p>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 250 Mega</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Wi-Fi 6 incluso</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Suporte prioritário</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Instalação grátis</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 2 roteadores</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Contratar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-plan card p-4">
+                        <div class="text-center">
+                            <i class="bi bi-wifi feature-icon"></i>
+                            <h3>Plano Gamer</h3>
+                            <div class="plan-price">R$ 179,90</div>
+                            <p class="text-muted">por mês</p>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 500 Mega</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Wi-Fi 6 incluso</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Suporte VIP</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Instalação grátis</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Roteador gamer</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Contratar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informações da Empresa -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Sobre a Worldnet</h2>
+            <div class="company-info">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="info-item">
+                            <i class="bi bi-building info-icon"></i>
+                            <h5>Razão Social</h5>
+                            <p>Fagner Angelo dos Santos</p>
+                            
+                            <i class="bi bi-tag info-icon mt-4"></i>
+                            <h5>CNPJ</h5>
+                            <p>26.088.935/0001-65</p>
+                            
+                            <i class="bi bi-calendar-check info-icon mt-4"></i>
+                            <h5>Situação Cadastral</h5>
+                            <p>Ativa desde 02/09/2016</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-item">
+                            <i class="bi bi-geo-alt info-icon"></i>
+                            <h5>Endereço</h5>
+                            <p>Travessa Jose Alves, 270 A<br>
+                            Bairro: Distrito de Siriji<br>
+                            São Vicente Ferrer - PE<br>
+                            CEP: 55860-000</p>
+                            
+                            <i class="bi bi-telephone info-icon mt-4"></i>
+                            <h5>Contato</h5>
+                            <p>(81) 99820-0727</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Área de Cobertura -->
+    <section class="coverage-area">
+        <div class="container">
+            <h2 class="text-center mb-5">Área de Cobertura</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card p-4">
+                        <div class="row text-center">
+                            <div class="col-6 col-md-3 mb-3">
+                                <i class="bi bi-geo-fill feature-icon"></i>
+                                <p>Distrito de Siriji</p>
+                            </div>
+                            <div class="col-6 col-md-3 mb-3">
+                                <i class="bi bi-geo-fill feature-icon"></i>
+                                <p>Centro</p>
+                            </div>
+                            <div class="col-6 col-md-3 mb-3">
+                                <i class="bi bi-geo-fill feature-icon"></i>
+                                <p>São Vicente Ferrer</p>
+                            </div>
+                            <div class="col-6 col-md-3 mb-3">
+                                <i class="bi bi-geo-fill feature-icon"></i>
+                                <p>Zona Rural</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">O que nossos clientes dizem</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="testimonial-card">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <p class="mt-3">"Melhor internet da região! Conexão estável e suporte muito atencioso."</p>
+                        <p class="fw-bold">- Maria Silva</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="testimonial-card">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <p class="mt-3">"Atendimento rápido e internet de qualidade. Recomendo!"</p>
+                        <p class="fw-bold">- João Santos</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="testimonial-card">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <p class="mt-3">"Preço justo e internet de qualidade. Parabéns Worldnet!"</p>
+                        <p class="fw-bold">- Ana Oliveira</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="mb-4">Entre em Contato</h2>
+                    <p class="mb-4">Estamos prontos para atender você!</p>
+                    <div class="d-flex justify-content-center mb-4">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/5581998200727" class="social-icon" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <i class="bi bi-envelope-fill feature-icon"></i>
+                            <p>contato@worldnet.com.br</p>
+                        </div>
+                        <div class="col-12">
+                            <i class="bi bi-telephone-fill feature-icon"></i>
+                            <p>(81) 99820-0727</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="bi bi-wifi"></i> Worldnet Provedor de Internet</h5>
+                    <p>CNPJ: 26.088.935/0001-65</p>
+                    <p>Desde 2016 conectando pessoas</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Travessa Jose Alves, 270 A - Distrito de Siriji</p>
+                    <p>São Vicente Ferrer - PE - CEP: 55860-000</p>
+                    <p>&copy; 2024 Worldnet - Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scrolling para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
